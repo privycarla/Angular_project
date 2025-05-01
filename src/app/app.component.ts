@@ -1,20 +1,18 @@
 import { Component } from '@angular/core';
+import { Router, RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common'; // ✅ Import this
 
 @Component({
   selector: 'app-root',
-  template: `
-    <div class="w-full min-h-screen bg-orange-50 flex flex-col items-center justify-between py-10 relative overflow-hidden">
-      <img class="w-80 h-auto animate-pulse" src="/assets/ai.png" alt="Appointment" />
-
-      <div class="w-full px-6 absolute bottom-10">
-        <button class="w-full bg-yellow-600 hover:bg-yellow-700 text-white text-lg font-semibold py-3 rounded-full transition duration-300 shadow-md hover:shadow-lg">
-          BOOK AN APPOINTMENT
-        </button>
-      </div>
-    </div>
-  `,
+  standalone: true,
+  imports: [RouterModule, CommonModule], // ✅ Add CommonModule here
+  templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'aima';
+  constructor(public router: Router) {}
+
+  isHomePage(): boolean {
+    return this.router.url === '/';
+  }
 }
