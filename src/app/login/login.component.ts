@@ -48,7 +48,7 @@ import { CommonModule } from '@angular/common'; // for *ngIf and more
           <input [(ngModel)]="password" type="password" placeholder="Enter Password"
                  class="w-full mb-6 px-4 py-3 rounded-full border border-yellow-600 shadow text-sm focus:outline-none focus:ring-2 focus:ring-yellow-500 transition" />
 
-          <button (click)="onLogin()"
+          <button routerLink = "/home" (click)="onLogin()"
                   class="w-full bg-yellow-600 hover:bg-yellow-700 text-white font-extrabold py-3 rounded-full text-xl transition">
             LOGIN
           </button>

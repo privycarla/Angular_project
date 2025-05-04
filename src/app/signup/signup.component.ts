@@ -47,7 +47,7 @@ import { CommonModule } from '@angular/common';
           <input [(ngModel)]="confirmPassword" type="password" placeholder="Confirm Password"
                  class="w-full mb-6 px-4 py-3 rounded-full border border-yellow-600 shadow text-sm focus:outline-none focus:ring-2 focus:ring-yellow-500 transition" />
 
-          <button (click)="onRegister()"
+          <button routerLink = "/home" (click)="onRegister()"
                   class="w-full bg-yellow-600 hover:bg-yellow-700 text-white font-extrabold py-3 rounded-full text-xl transition">
             REGISTER
           </button>
