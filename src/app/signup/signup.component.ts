@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
     <div class="w-full max-w-[375px] bg-orange-50 rounded-xl shadow-lg overflow-hidden">
       <!-- Header -->
       <div class="flex flex-col items-center pt-6">
-        <img src="/assets/ize.png" alt="Logo" class="w-72 h-40 object-contain mb-2" />
+        <img src="assets/ize.png" alt="Logo" class="w-72 h-40 object-contain mb-2" />
       </div>
 
       <!-- Yellow panel -->

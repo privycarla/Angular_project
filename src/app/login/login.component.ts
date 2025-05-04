@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common'; // for *ngIf and more
     <div class="w-full max-w-[375px] h-screen bg-orange-50 mx-auto font-poppins relative overflow-hidden">
       <!-- Header -->
       <div class="flex flex-col items-center pt-6">
-        <img src="/assets/ize.png" alt="Logo" class="w-72 h-40 object-contain mb-2" />
+        <img src="assets/ize.png" alt="Logo" class="w-72 h-40 object-contain mb-2" />
       </div>
 
       <!-- Yellow panel -->
